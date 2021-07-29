@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		EF1D688A26B2D62B00D1E467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D688826B2D62B00D1E467 /* LaunchScreen.storyboard */; };
 		EF1D689526B2D62B00D1E467 /* ExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D689426B2D62B00D1E467 /* ExampleSwiftTests.swift */; };
 		EF1D68A026B2D62B00D1E467 /* ExampleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D689F26B2D62B00D1E467 /* ExampleSwiftUITests.swift */; };
+		EF1D68AF26B2D9C100D1E467 /* ModalCustomizationFramework in Frameworks */ = {isa = PBXBuildFile; productRef = EF1D68AE26B2D9C100D1E467 /* ModalCustomizationFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1D68AF26B2D9C100D1E467 /* ModalCustomizationFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = ExampleSwift;
+			packageProductDependencies = (
+				EF1D68AE26B2D9C100D1E467 /* ModalCustomizationFramework */,
+			);
 			productName = ExampleSwift;
 			productReference = EF1D687A26B2D62800D1E467 /* ExampleSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = EF1D687126B2D62800D1E467;
+			packageReferences = (
+				EF1D68AD26B2D9C100D1E467 /* XCRemoteSwiftPackageReference "ModalCustomization-SwiftPackageManager" */,
+			);
 			productRefGroup = EF1D687B26B2D62800D1E467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF1D68AD26B2D9C100D1E467 /* XCRemoteSwiftPackageReference "ModalCustomization-SwiftPackageManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ModalCustomizationFramework/ModalCustomization-SwiftPackageManager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF1D68AE26B2D9C100D1E467 /* ModalCustomizationFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF1D68AD26B2D9C100D1E467 /* XCRemoteSwiftPackageReference "ModalCustomization-SwiftPackageManager" */;
+			productName = ModalCustomizationFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF1D687226B2D62800D1E467 /* Project object */;
 }
